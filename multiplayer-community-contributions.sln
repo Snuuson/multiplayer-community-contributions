@@ -1,0 +1,54 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Transports", "Transports", "{6D81D0D1-7A60-1ADD-C689-B1528D5CD9EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "com.community.netcode.transport.litenetlib", "com.community.netcode.transport.litenetlib", "{C52482F5-9654-8202-270E-E1230E39699A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Runtime", "Runtime", "{EA8C6A24-5DEA-F04F-1505-78554FAF3FD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiteNetLib", "Transports\com.community.netcode.transport.litenetlib\Runtime\LiteNetLib\LiteNetLib.csproj", "{AD5FF04D-3932-2BF1-E58A-952564046865}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "com.community.netcode.transport.websocket", "com.community.netcode.transport.websocket", "{42918F2B-2242-E28E-6FA4-A26C8669303B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Runtime", "Runtime", "{03EFB6F7-246F-4A52-6F8B-4D7F838A4411}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{0ED85B32-94E1-D744-30FE-7AE8DC8DB728}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "websocket-sharp", "websocket-sharp", "{58E78FC6-75F5-0E34-7352-EDC308ADBCDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "websocket-sharp", "Transports\com.community.netcode.transport.websocket\Runtime\Libraries\websocket-sharp\websocket-sharp\websocket-sharp.csproj", "{F1A3AB1F-6DEC-7F64-F553-82F4BD8B064B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD5FF04D-3932-2BF1-E58A-952564046865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD5FF04D-3932-2BF1-E58A-952564046865}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD5FF04D-3932-2BF1-E58A-952564046865}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD5FF04D-3932-2BF1-E58A-952564046865}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1A3AB1F-6DEC-7F64-F553-82F4BD8B064B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1A3AB1F-6DEC-7F64-F553-82F4BD8B064B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1A3AB1F-6DEC-7F64-F553-82F4BD8B064B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1A3AB1F-6DEC-7F64-F553-82F4BD8B064B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C52482F5-9654-8202-270E-E1230E39699A} = {6D81D0D1-7A60-1ADD-C689-B1528D5CD9EE}
+		{EA8C6A24-5DEA-F04F-1505-78554FAF3FD4} = {C52482F5-9654-8202-270E-E1230E39699A}
+		{AD5FF04D-3932-2BF1-E58A-952564046865} = {EA8C6A24-5DEA-F04F-1505-78554FAF3FD4}
+		{42918F2B-2242-E28E-6FA4-A26C8669303B} = {6D81D0D1-7A60-1ADD-C689-B1528D5CD9EE}
+		{03EFB6F7-246F-4A52-6F8B-4D7F838A4411} = {42918F2B-2242-E28E-6FA4-A26C8669303B}
+		{0ED85B32-94E1-D744-30FE-7AE8DC8DB728} = {03EFB6F7-246F-4A52-6F8B-4D7F838A4411}
+		{58E78FC6-75F5-0E34-7352-EDC308ADBCDB} = {0ED85B32-94E1-D744-30FE-7AE8DC8DB728}
+		{F1A3AB1F-6DEC-7F64-F553-82F4BD8B064B} = {58E78FC6-75F5-0E34-7352-EDC308ADBCDB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {528D3630-F956-4F4A-BDB7-2E293662C0AB}
+	EndGlobalSection
+EndGlobal
