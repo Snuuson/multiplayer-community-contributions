@@ -91,19 +91,20 @@ namespace Netcode.Transports.Facepunch
         }
 
         public override void Initialize(NetworkManager networkManager = null)
-        {
-            connectedClients = new Dictionary<ulong, Client>();
-
-            try
-            {
-                SteamClient.Init(steamAppId, false);
-            }
-            catch (Exception e)
-            {
-                if (LogLevel <= LogLevel.Error)
-                    Debug.LogError($"[{nameof(FacepunchTransport)}] - Caught an exeption during initialization of Steam client: {e}");
-            }
-        }
+		{
+		    connectedClients = new Dictionary<ulong, Client>();
+		    if (SteamClient.IsValid)
+		        return;
+		    try
+		    {
+		        SteamClient.Init(steamAppId, false);
+		    }
+		    catch (Exception e)
+		    {
+		        if (LogLevel <= LogLevel.Error)
+		            Debug.LogError($"[{nameof(FacepunchTransport)}] - Caught an exeption during initialization of Steam client: {e}");
+		    }
+		}
 
         private SendType NetworkDeliveryToSendType(NetworkDelivery delivery)
         {
