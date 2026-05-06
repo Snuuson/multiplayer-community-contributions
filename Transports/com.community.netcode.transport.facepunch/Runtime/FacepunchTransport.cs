@@ -127,7 +127,7 @@ namespace Netcode.Transports.Facepunch
 
                 connectionManager?.Close();
                 socketManager?.Close();
-                SteamClient.Shutdown();
+                //SteamClient.Shutdown();
             }
             catch (Exception e)
             {
